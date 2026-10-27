@@ -1,0 +1,14 @@
+{
+  "name": "simple-affiliate",
+  "description": "Simple Affiliate, the affiliate program app for Shopify stores, as a Claude plugin.",
+  "owner": {
+    "name": "SA Inc.",
+    "url": "https://simple-affiliate.com"
+  },
+  "plugins": [
+    {
+      "name": "simple-affiliate",
+      "source": "./"
+    }
+  ]
+}

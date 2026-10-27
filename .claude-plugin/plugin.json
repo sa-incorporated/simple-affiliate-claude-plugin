@@ -1,0 +1,18 @@
+{
+  "name": "simple-affiliate",
+  "displayName": "Simple Affiliate",
+  "version": "1.0.0",
+  "description": "Run your Simple Affiliate program for Shopify from Claude: see reports, affiliates, referrals and payouts owed, check the setup, and change settings and groups after you confirm.",
+  "author": {
+    "name": "SA Inc.",
+    "url": "https://simple-affiliate.com"
+  },
+  "homepage": "https://simple-affiliate.com",
+  "repository": "https://github.com/sa-incorporated/simple-affiliate-claude-plugin",
+  "keywords": ["shopify", "affiliate program", "affiliate marketing", "referrals", "commissions"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/sa-incorporated/simple-affiliate-claude-plugin#readme",
+  "supportUrl": "https://simple-affiliate.com/pages/contact",
+  "privacyPolicyUrl": "https://simple-affiliate.com/pages/privacy-policy",
+  "termsOfServiceUrl": "https://simple-affiliate.com/pages/terms-and-conditions"
+}
