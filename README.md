@@ -11,9 +11,10 @@ can:
 - check the setup of the program and the setup checklist;
 - read the settings of each settings tab, the affiliate groups, the product commissions, the linked stores and the
   headless storefront;
-- change the Emails, Signup, Referral, Dashboard, Translations and Klaviyo settings, the group automation flow, the
+- change the Email settings, Email design, Signup, Referral, Dashboard, Translations and Klaviyo settings, the group automation flow, the
   affiliate groups, the product commissions, the linked stores and the headless storefront, after you confirm;
-- prepare a referral assignment, an affiliate approval or a new affiliate, which you save in the Simple Affiliate admin.
+- approve, reject, suspend or reactivate affiliates, after you confirm;
+- prepare a referral assignment or a new affiliate, which you save in the Simple Affiliate admin.
 
 ## What you need
 
@@ -30,8 +31,8 @@ can:
 - **Four skills** that tell Claude how to use the connector:
   - `get-started` checks the connection and shows what to ask.
   - `reports` reads the Overview page, the Analytics overview, the reports and what you owe your affiliates.
-  - `affiliates` looks up affiliates and referrals, explains the referral of an order, and prepares a referral, an
-    approval or a new affiliate for you to save in the admin.
+  - `affiliates` looks up affiliates and referrals, explains the referral of an order, approves, rejects, suspends or
+    reactivates affiliates after you confirm, and prepares a referral or a new affiliate for you to save in the admin.
   - `settings` reads the settings, the groups, the product commissions, the linked stores and the headless
     storefront, and changes them after you confirm.
 
@@ -68,8 +69,8 @@ Claude cannot change a setting by itself. When you ask it for a change, Simple A
 Confirm card in the conversation. Nothing changes until you click **Confirm**.
 A card that you do not confirm expires after 10 minutes.
 
-Claude also cannot add an affiliate, approve a signup or assign a referral. It prepares them: it gives you a link to
-the page of the Simple Affiliate admin, filled in, and you review and save it there.
+Claude also cannot add an affiliate or assign a referral. It prepares them: it gives you a link to the page of the
+Simple Affiliate admin, filled in, and you review and save it there.
 
 ## No money moves from Claude
 

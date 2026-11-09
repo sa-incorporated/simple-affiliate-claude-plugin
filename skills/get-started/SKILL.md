@@ -16,14 +16,15 @@ payouts. The connector acts as the staff member who connected it, on one store o
      needs Simple Affiliate installed from the Shopify App Store.
 2. Name the connected store. The server's instructions say which store this connection reached ("Connected to Simple
    Affiliate for the store …"). Say it in one short sentence. If a check of the result has the status action_needed,
-   name it in one line with its link.
+   name it in one line with its link. When the user asks what to fix or improve in the program, call
+   `get_program_health` and give its findings in order, each with its fix.
 3. Offer three things they can ask, one line each:
    - "How did my affiliates do in the last 90 days?"
    - "What do I owe my affiliates, and who can't be paid?"
    - "Raise the commission of the VIP group to 15%."
 4. Explain in two sentences. First: each change in Simple Affiliate happens only after they click Confirm in the card
    that appears. Second: Claude does not pay affiliates or change the payout settings, and
-   it prepares a new affiliate, an approval or a referral as a link that they save in the Simple Affiliate admin.
+   it prepares a new affiliate or a referral as a link that they save in the Simple Affiliate admin.
 
 Keep it short. If the user added the plugin in the middle of a task, continue that task in the same conversation.
 Never list the affiliates or their data during setup.

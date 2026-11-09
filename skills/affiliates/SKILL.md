@@ -1,6 +1,6 @@
 ---
 name: affiliates
-description: Look up Simple Affiliate affiliates and referrals, explain why an order was or was not credited to an affiliate, check the setup of the program, and prepare a referral assignment, an affiliate approval, a new affiliate or an invite resend for the merchant to save or send. Use when the user asks about an affiliate, a referral, an order's credit, signups that wait for approval, adding an affiliate, an invite that an affiliate did not get, or how to do something in Simple Affiliate.
+description: Look up Simple Affiliate affiliates and referrals, explain why an order was or was not credited to an affiliate, check the setup of the program, prepare a referral assignment, a new affiliate or an invite resend for the merchant to save or send, and approve, reject, suspend or reactivate affiliates behind the staff Confirm. Use when the user asks about an affiliate, a referral, an order's credit, signups that wait for approval, a suspension, adding an affiliate, an invite that an affiliate did not get, or how to do something in Simple Affiliate.
 ---
 
 # Affiliates, referrals and the setup
@@ -16,14 +16,25 @@ description: Look up Simple Affiliate affiliates and referrals, explain why an o
 4. **Prepare a change of affiliates or referrals.** These tools save and send nothing. Each one gives a link to a page
    of the Simple Affiliate admin, filled in, where the merchant reviews and saves the change.
    - To credit an order to an affiliate, call `draft_referral_assignment`.
-   - To approve a signup that waits for approval, call `draft_affiliate_approval`. Without an affiliate, it lists the
-     signups that wait.
    - To add an affiliate, call `draft_affiliate_creation`.
    - To send the invite (the welcome email) to an affiliate again, call `draft_invite_resend`. Without an affiliate, it
      counts the active affiliates who never signed in.
 
    Give the link of the result. Say that the change is made only when the merchant saves it on that page.
-5. **Answer how-to questions.** Call `search_help`. Answer from the summary and the excerpt, and give the article
+5. **Approve, reject, suspend or reactivate affiliates.** These tools change the status behind the Confirm card of a
+   staff member, as the buttons of the admin do. Find the affiliates first: `search_affiliates` and `get_affiliate`
+   give the affiliate id of each one (`affiliateId`). To list the signups that wait for approval, call
+   `draft_affiliate_approval` with no affiliate.
+   - To approve affiliates that wait for approval, or to reactivate suspended affiliates, call `approve_affiliates`.
+   - To reject affiliates that wait for approval, or to suspend active affiliates, call `suspend_affiliates`. Tell the
+     user before the call that a suspension ends the links of the affiliate to customers and its product attributions,
+     and that a reactivation does not bring them back.
+   - Ask the user whether to send the email (the welcome email, or the suspension email), and give the answer in the
+     call. Up to 50 affiliates go in one call.
+
+   The call shows the Confirm card. Only a staff member confirms it. When the answer names affiliates that it did not
+   change, give their names and their new status.
+6. **Answer how-to questions.** Call `search_help`. Answer from the summary and the excerpt, and give the article
    link.
 
 Do not invent figures, reasons or settings. When a result has ok false or is an error, give its message.
